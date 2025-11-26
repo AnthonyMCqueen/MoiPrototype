@@ -2,9 +2,191 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aulas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-[#f5f9ff] text-[#0f172a]">
+    <!-- Topbar -->
+    <header class="fixed top-0 left-0 w-full h-16 bg-[#010535] text-white flex items-center px-6 shadow-lg z-20">
+        <button id="menuButton" class="mr-4 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        </button>
+        <span class="text-xl font-semibold">Cursos Moy</span>
+    </header>
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed top-16 left-0 w-64 h-full bg-[#161831] text-white transform -translate-x-full transition-transform duration-300 z-10">
+        <div class="w-full flex justify-center mt-6 mb-4">
+            <img src="img/logo.png" alt="Logo" class="w-36 h-auto">
+        </div>
+        <nav class="mt-4 space-y-1">
+            <a href="nuestro_trabajo.html" class="flex items-center px-6 py-3 hover:bg-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.867 19.125h.008v.008h-.008v-.008Z" />
+                </svg>
+                Nuestro arte
+            </a>
+            <a href="./aulas.html" class="flex items-center px-6 py-3 hover:bg-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                </svg>
+                Aulas
+            </a>
+            <a href="./testimonios.html" class="flex items-center px-6 py-3 hover:bg-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                </svg>
+                Testimonios
+            </a>
+            <a href="./contacto.html" class="flex items-center px-6 py-3 hover:bg-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+                Contacto
+            </a>
+        </nav>
+    </aside>
+    <main class="pt-20">
+    <section class="max-w-7xl mx-auto px-6">
+      <div class="flex items-end justify-between">
+        <h1 class="text-3xl font-semibold">Aulas</h1>
+      </div>
+    </section>
 
+    <section class="max-w-7xl mx-auto px-6 mt-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <div class="lg:col-span-3">
+          <h2 class="text-lg font-semibold mb-2">Temas</h2>
+          <div id="temasList" class="space-y-1"></div>
+        </div>
+
+        <div class="lg:col-span-4">
+          <h2 class="text-lg font-semibold mb-2">Subtemas</h2>
+          <div id="subtemasList" class="space-y-1"></div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <h2 class="text-lg font-semibold mb-2">Clases y videos</h2>
+          <div id="mediaFeed" class="space-y-2"></div>
+        </div>
+      </div>
+    </section>
+
+    </main>
+    <script>
+        const menuButton = document.getElementById("menuButton");
+        const sidebar = document.getElementById("sidebar");
+        menuButton.addEventListener("click", () => {
+            sidebar.classList.toggle("-translate-x-full");
+        });
+        const data = [
+          {
+            nombre: "Tema 1",
+            subtemas: [
+              {
+                nombre: "Subtema A",
+                media: [
+                  { tipo: "video", titulo: "Video 1" },
+                  { tipo: "video", titulo: "Video 2" },
+                  { tipo: "clase", titulo: "Clase 1" }
+                ]
+              },
+              {
+                nombre: "Subtema B",
+                media: [
+                  { tipo: "clase", titulo: "Clase 2" },
+                  { tipo: "video", titulo: "Video 3" }
+                ]
+              }
+            ]
+          },
+          {
+            nombre: "Tema 2",
+            subtemas: [
+              {
+                nombre: "Subtema C",
+                media: [
+                  { tipo: "video", titulo: "Introducción" },
+                  { tipo: "clase", titulo: "Clase teórica" }
+                ]
+              }
+            ]
+          },
+          {
+            nombre: "Tema 3",
+            subtemas: [
+              { nombre: "Subtema D", media: [ { tipo: "video", titulo: "Demostración" } ] }
+            ]
+          }
+        ];
+
+        let selectedTemaIndex = 0;
+        let selectedSubtemaIndex = 0;
+
+        const temasList = document.getElementById("temasList");
+        const subtemasList = document.getElementById("subtemasList");
+        const mediaFeed = document.getElementById("mediaFeed");
+
+        const baseItem = "px-3 py-2 rounded-md cursor-pointer hover:bg-slate-100";
+        const selectedItem = "bg-slate-200 font-semibold";
+
+        function renderTemas() {
+          temasList.innerHTML = "";
+          data.forEach((t, i) => {
+            const el = document.createElement("div");
+            el.className = baseItem + (i === selectedTemaIndex ? " " + selectedItem : "");
+            el.textContent = t.nombre;
+            el.addEventListener("click", () => {
+              selectedTemaIndex = i;
+              selectedSubtemaIndex = 0;
+              renderTemas();
+              renderSubtemas();
+              renderMedia();
+            });
+            temasList.appendChild(el);
+          });
+        }
+
+        function renderSubtemas() {
+          subtemasList.innerHTML = "";
+          const subtemas = data[selectedTemaIndex].subtemas;
+          subtemas.forEach((s, i) => {
+            const el = document.createElement("div");
+            el.className = baseItem + (i === selectedSubtemaIndex ? " " + selectedItem : "");
+            el.textContent = s.nombre;
+            el.addEventListener("click", () => {
+              selectedSubtemaIndex = i;
+              renderSubtemas();
+              renderMedia();
+            });
+            subtemasList.appendChild(el);
+          });
+        }
+
+        function renderMedia() {
+          mediaFeed.innerHTML = "";
+          const media = data[selectedTemaIndex].subtemas[selectedSubtemaIndex].media;
+          media.forEach((m) => {
+            let el;
+            if (m.tipo === "video") {
+              el = document.createElement("div");
+              el.className = "aspect-video w-full rounded-md grid place-items-center bg-slate-100 text-slate-600";
+              el.textContent = m.titulo;
+            } else {
+              el = document.createElement("div");
+              el.className = "aspect-video w-full rounded-md grid place-items-center bg-slate-50 text-slate-700";
+              el.textContent = m.titulo;
+            }
+            mediaFeed.appendChild(el);
+          });
+        }
+
+        renderTemas();
+        renderSubtemas();
+        renderMedia();
+    </script>
 </body>
 </html>
