@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Testimonios</title>
-
+    <title>Aulas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,73 +59,34 @@
         </nav>
     </aside>
     <main class="pt-20">
-        <section class="max-w-7xl mx-auto px-6">
-            <div class="flex items-end justify-between">
-                <h1 class="text-3xl font-semibold">Testimonios</h1>
-            </div>
-            <div class="max-w-7xl mx-auto">
-                 <hr class="my-6 border-slate-300">
-            </div>  
-        </section>
+    <section class="max-w-7xl mx-auto px-6">
+      <div class="flex items-end justify-between">
+        <h1 class="text-3xl font-semibold">Aulas</h1>
+      </div>
+      <div class="max-w-7xl mx-auto">
+      <hr class="my-6 border-slate-300">
+    </div>
+    </section>
 
-        <section class="max-w-7xl mx-auto px-6 mt-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-0.5">
-                <div>
-                    <div class="aspect-square w-full overflow-hidden rounded-md relative">
-                        <img src="img/6.png" alt="Persona 1" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-3">
-                            <p class="text-white text-sm sm:text-base font-medium">“Excelente curso, aprendí técnicas que no conocía.”</p>
-                            <span class="mt-1 text-xs sm:text-sm text-slate-200">Ana Pérez, Alumna</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="aspect-square w-full overflow-hidden rounded-md relative">
-                        <img src="img/6.png" alt="Persona 2" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-3">
-                            <p class="text-white text-sm sm:text-base font-medium">“Lo mejor fue la claridad de las clases.”</p>
-                            <span class="mt-1 text-xs sm:text-sm text-slate-200">Luis Gómez, Alumno</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="aspect-square w-full overflow-hidden rounded-md relative">
-                        <img src="img/6.png" alt="Persona 3" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-3">
-                            <p class="text-white text-sm sm:text-base font-medium">“Material bien organizado y práctico.”</p>
-                            <span class="mt-1 text-xs sm:text-sm text-slate-200">María López, Alumna</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="aspect-square w-full overflow-hidden rounded-md relative">
-                        <img src="img/6.png" alt="Persona 4" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-3">
-                            <p class="text-white text-sm sm:text-base font-medium">“Recomendado para principiantes y avanzados.”</p>
-                            <span class="mt-1 text-xs sm:text-sm text-slate-200">Carlos Ruiz, Alumno</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="aspect-square w-full overflow-hidden rounded-md relative">
-                        <img src="img/6.png" alt="Persona 5" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-3">
-                            <p class="text-white text-sm sm:text-base font-medium">“Aprendí mucho en poco tiempo.”</p>
-                            <span class="mt-1 text-xs sm:text-sm text-slate-200">Sofía Martínez, Alumna</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="aspect-square w-full overflow-hidden rounded-md relative">
-                        <img src="img/6.png" alt="Persona 6" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-3">
-                            <p class="text-white text-sm sm:text-base font-medium">“Clases dinámicas y bien explicadas.”</p>
-                            <span class="mt-1 text-xs sm:text-sm text-slate-200">Diego Fernández, Alumno</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="max-w-7xl mx-auto px-6 mt-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <div class="lg:col-span-3 bg-slate-100 rounded-xl p-4 shadow-sm">
+          <h2 class="text-lg font-semibold mb-2">Temas</h2>
+          <div id="temasList" class="space-y-1"></div>
+        </div>
+
+        <div class="lg:col-span-4 bg-slate-100 rounded-xl p-4 shadow-sm">
+          <h2 class="text-lg font-semibold mb-2">Subtemas</h2>
+          <div id="subtemasList" class="space-y-1"></div>
+        </div>
+
+        <div class="lg:col-span-5 bg-slate-100 rounded-xl p-4 shadow-sm">
+          <h2 class="text-lg font-semibold mb-2">Clases y videos</h2>
+          <div id="mediaFeed" class="space-y-2"></div>
+        </div>
+      </div>
+    </section>
+
     </main>
     <footer class="bg-[#0f4c82] text-white mt-10">
       <div class="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -170,13 +130,117 @@
         </div>
       </div>
     </footer>
- </body>
-<script>
-    const menuButton = document.getElementById("menuButton");
-    const sidebar = document.getElementById("sidebar");
+    <script>
+        const menuButton = document.getElementById("menuButton");
+        const sidebar = document.getElementById("sidebar");
+        menuButton.addEventListener("click", () => {
+            sidebar.classList.toggle("-translate-x-full");
+        });
+        const data = [
+          {
+            nombre: "Tema 1",
+            subtemas: [
+              {
+                nombre: "Subtema A",
+                media: [
+                  { tipo: "video", titulo: "Video 1" },
+                  { tipo: "video", titulo: "Video 2" },
+                  { tipo: "clase", titulo: "Clase 1" }
+                ]
+              },
+              {
+                nombre: "Subtema B",
+                media: [
+                  { tipo: "clase", titulo: "Clase 2" },
+                  { tipo: "video", titulo: "Video 3" }
+                ]
+              }
+            ]
+          },
+          {
+            nombre: "Tema 2",
+            subtemas: [
+              {
+                nombre: "Subtema C",
+                media: [
+                  { tipo: "video", titulo: "Introducción" },
+                  { tipo: "clase", titulo: "Clase teórica" }
+                ]
+              }
+            ]
+          },
+          {
+            nombre: "Tema 3",
+            subtemas: [
+              { nombre: "Subtema D", media: [ { tipo: "video", titulo: "Demostración" } ] }
+            ]
+          }
+        ];
 
-    menuButton.addEventListener("click", () => {
-        sidebar.classList.toggle("-translate-x-full");
-    });
-</script>
+        let selectedTemaIndex = 0;
+        let selectedSubtemaIndex = 0;
+
+        const temasList = document.getElementById("temasList");
+        const subtemasList = document.getElementById("subtemasList");
+        const mediaFeed = document.getElementById("mediaFeed");
+
+        const baseItem = "px-3 py-2 rounded-md cursor-pointer hover:bg-slate-200";
+        const selectedItem = "bg-slate-200 font-semibold";
+
+        function renderTemas() {
+          temasList.innerHTML = "";
+          data.forEach((t, i) => {
+            const el = document.createElement("div");
+            el.className = baseItem + (i === selectedTemaIndex ? " " + selectedItem : "");
+            el.textContent = t.nombre;
+            el.addEventListener("click", () => {
+              selectedTemaIndex = i;
+              selectedSubtemaIndex = 0;
+              renderTemas();
+              renderSubtemas();
+              renderMedia();
+            });
+            temasList.appendChild(el);
+          });
+        }
+
+        function renderSubtemas() {
+          subtemasList.innerHTML = "";
+          const subtemas = data[selectedTemaIndex].subtemas;
+          subtemas.forEach((s, i) => {
+            const el = document.createElement("div");
+            el.className = baseItem + (i === selectedSubtemaIndex ? " " + selectedItem : "");
+            el.textContent = s.nombre;
+            el.addEventListener("click", () => {
+              selectedSubtemaIndex = i;
+              renderSubtemas();
+              renderMedia();
+            });
+            subtemasList.appendChild(el);
+          });
+        }
+
+        function renderMedia() {
+          mediaFeed.innerHTML = "";
+          const media = data[selectedTemaIndex].subtemas[selectedSubtemaIndex].media;
+          media.forEach((m) => {
+            let el;
+            if (m.tipo === "video") {
+              el = document.createElement("div");
+              el.className = "aspect-video w-full rounded-md grid place-items-center bg-slate-100 text-slate-600";
+              el.textContent = m.titulo;
+            } else {
+              el = document.createElement("div");
+              el.className = "aspect-video w-full rounded-md grid place-items-center bg-slate-50 text-slate-700";
+              el.textContent = m.titulo;
+            }
+            mediaFeed.appendChild(el);
+          });
+        }
+
+        renderTemas();
+        renderSubtemas();
+        renderMedia();
+    </script>
+</body>
 </html>
